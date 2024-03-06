@@ -17,5 +17,5 @@ def xor(l1, l2):
     """Given two lists of bytes, xor them together elementwise, ignoring trailing bytes
     of the longer list.
     """
-    return [l1[i] ^ l2[i] for i in range(min(len(l1), len(l2)))]
+    return bytes([l1[i] ^ l2[i] for i in range(min(len(l1), len(l2)))])
 
